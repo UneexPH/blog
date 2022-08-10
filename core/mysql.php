@@ -27,7 +27,7 @@ function insere (string $entidade, array $dados) : bool
 
     mysqli_stmt_close($stmt);
 
-    desconecta($conexao);
+    desconecta ($conexao);
 
     return $retorno;
 }
@@ -47,7 +47,7 @@ function atualiza(string $entidade, array $dados, array $criterio = []) : bool
 
         $tipo[] = gettype($dado)[0];
         $expressao[count($expressao) - 1] = '?';
-        $coringa_criterio[] = $expressao
+        $coringa_criterio[] = $expressao;
 
         $nome_campo = (count($expressao) < 4) ? $expressao[0] : $expressao[1];
 
@@ -132,7 +132,7 @@ function deleta(string $entidade, array $criterio = []) : bool
 
     mysqli_stmt_close($stmt);
 
-    desconexta($conexao);
+    desconecta($conexao);
 
     return $retorno;
 }
@@ -181,7 +181,7 @@ string $ordem = null) : array
     if($result = mysqli_stmt_get_result($stmt)){
         $retorno = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-        mysqli_free_reuslt($result);
+        mysqli_free_result($result);
     }
 
     $_SESSION['errors'] = mysqli_stmt_error_list($stmt);
@@ -194,3 +194,4 @@ string $ordem = null) : array
 
     return $retorno;
 }
+?>
