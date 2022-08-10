@@ -34,3 +34,6 @@ CREATE TABLE avaliacao (
     CONSTRAINT fk_avaliacao_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id),
     CONSTRAINT fk_avaliacao_post FOREIGN KEY (post_id) REFERENCES post (id) 
 );
+
+insert into post (titulo, texto, usuario_id) values('titulo foda', 'texto foda interessante', '1');
+
