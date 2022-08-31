@@ -35,7 +35,7 @@
                     require_once 'core/sql.php';
                     require_once 'core/mysql.php';
 
-                    foreach($GET as $indice => $dado) {
+                    foreach($GET_ as $indice => $dado) {
                         $$indice = limparDados($dado);
                     }
 
