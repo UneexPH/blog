@@ -91,7 +91,7 @@
             <div class="col-md-12">
                 <!-- Rodapé //-->
                 <?php
-                    include 'include/rodape.php';
+                    include 'includes/rodape.php';
                 ?>
             </div>
         </div>
