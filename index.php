@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <!--Menu //-->
                     <?php
-                        include 'includes/meu.php';
+                        include 'includes/menu.php';
                     ?>
             </div>
             <div class="col-md-10" style="padding-top: 50px;">
