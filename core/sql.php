@@ -13,8 +13,6 @@ $instrucao .= " VALUES ({$valores})";
 return $instrucao;
 }
 
-/* */
-
 function delete (string $entidade, array $criterio = []) : String
 {
     $instrucao = "DELETE {$entidade}";

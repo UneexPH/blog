@@ -35,4 +35,4 @@ CREATE TABLE avaliacao (
     CONSTRAINT fk_avaliacao_post FOREIGN KEY (post_id) REFERENCES post (id) 
 );
 
-
+select * from usuario;
